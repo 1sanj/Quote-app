@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+
+body {
+    background-color:#EED3D9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+
+main {
+    background:#B5C0D0;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    padding: 30px;
+}
+
+
+#one h2 {
+    font-size: 2rem;
+    color:#fec7b4;
+    font-weight: bold;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #f3f4f6;
+    padding-bottom: 10px;
+}
+
+
+#two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+
+#quote_text {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    background: #F5E8DD;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    width: 100%;
+    max-width: 500px;
+}
+
+#author {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #6b7280;
+}
+
+
+#quote_img img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #e5e7eb;
+    object-fit: cover;
+}
+
+
+#three button {
+    background-color: #CCD3CA;
+    color:black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#three button:hover {
+    background-color: #357abd;
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+    #quote_text {
+        font-size: 1.2rem;
+    }
+
+    #three button {
+        font-size: 1rem;
+        padding: 8px 18px;
+    }
+
+    #quote_img img {
+        width: 100px;
+        height: 100px;
+    }
+}
